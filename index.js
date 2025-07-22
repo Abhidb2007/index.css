@@ -1,7 +1,7 @@
 function greet(name){
     return "hello,"+name;
 }
-let ans = greet("abhi");
+let ans = greet("abi");
 let ans2 = greet("hi");
 let ans3 = greet("bi");
 
