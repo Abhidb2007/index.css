@@ -6,4 +6,3 @@ let user={
     name: "manu"
 
 }
-greet(user);
