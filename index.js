@@ -3,7 +3,7 @@ function greet(name){
 }
 let ans = greet("abhi");
 let ans2 = greet("hi");
-let ans3 = greet("bhi");
+let ans3 = greet("bi");
 
 console.log(ans);
 console.log(ans2);
