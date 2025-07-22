@@ -1,4 +1,10 @@
-let a=10;
-let b=20;
-let sum=a+b;
-console.log(sum);
+function canVote(age){
+    if(age>=18){
+        console.log("you are in adult");
+
+    }
+    if(age<18){
+        console.log("you are in adult");
+    }
+}
+canVote(18)
