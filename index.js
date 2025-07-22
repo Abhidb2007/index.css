@@ -7,4 +7,4 @@ function canVote(age){
         console.log("you are in adult");
     }
 }
-canVote(18)
+canVote(14)
