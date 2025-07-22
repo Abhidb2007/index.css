@@ -1,4 +1,4 @@
-var a=10;
-a="abhu";
-a=true;
-console.log(a)
+var isStudent = true;
+isStudent = "abhbu";
+isStudent = 10
+console.log(isStudent);
