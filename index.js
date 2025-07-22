@@ -3,7 +3,7 @@ function greet(user){
 }
 let user={
     age: "20",
-    name: "abhu"
+    name: "manu"
 
 }
 greet(user);
