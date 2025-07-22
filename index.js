@@ -1,10 +1,5 @@
-function greet(name){
-    return "hello,"+name;
-}
-let ans = greet("manu");
-let ans2 = greet("hai");
-let ans3 = greet("bi");
+let age=18;
+function canVote(age){ //true or false
+    return age>18;
 
-console.log(ans);
-console.log(ans2);
-console.log(ans3);
+}
