@@ -1,10 +1,9 @@
-function canVote(age){
-    if(age>=18){
-        console.log("you are in adult");
-
-    }
-    if(age<18){
-        console.log("you are in adult");
-    }
+function greet(user){
+    console.log("hi" + "user.name" + "your age is" + 19);
 }
-canVote(12)
+let user={
+    age: "19",
+    name: "abhu"
+
+}
+greet(user);
