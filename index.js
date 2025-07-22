@@ -1,5 +1,4 @@
-let age=18;
-function canVote(age){ //true or false
-    return age>18;
-
-}
+let a=10;
+let b=20;
+let sum=a+b;
+console.log(sum);
