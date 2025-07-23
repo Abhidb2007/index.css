@@ -1,5 +1,6 @@
-const add = (a, b) => {
-  return a + b;
-};
+let i = 1;
 
-console.log(add(5, 3));  // 8
+while (i <= 4) {
+  console.log("Number is:", i);
+  i++;
+}
