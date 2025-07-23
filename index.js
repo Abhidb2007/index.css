@@ -1,5 +1,5 @@
-let i=1;
-while(i<=3){
-    console.log("number:",i);
-    i++;
-}
+const add = (a, b) => {
+  return a + b;
+};
+
+console.log(add(5, 3));  // 8
