@@ -1,5 +1,4 @@
-function greet(name) {
-  console.log("Hello, " + name + "!");
-}
+let fruits = ["Apple", "Banana", "Mango"];
+console.log(fruits[0]);  // Apple
 
-greet("Abhishek");
+
