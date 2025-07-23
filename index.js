@@ -1,4 +1,7 @@
-let fruits = ["Apple", "Banana", "Mango"];
-console.log(fruits[0]);  // Apple
+let student = {
+  name: "Abhishek",
+  age: 20,
+  course: "Web Development"
+};
 
-
+console.log(student.name);  // Abhishek
