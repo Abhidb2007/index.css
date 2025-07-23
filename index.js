@@ -1,3 +1,5 @@
-for (let i = 1; i <= 5; i++) {
-  console.log("Count:", i);
+function greet(name) {
+  console.log("Hello, " + name + "!");
 }
+
+greet("Abhishek");
