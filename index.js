@@ -1,6 +1,2 @@
-let i = 1;
-
-while (i <= 9) {
-  console.log("Number is:", i);
-  i++;
-}
+let ans = sum(20,23);
+console.log(ans);
