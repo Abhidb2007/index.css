@@ -1,7 +1,3 @@
-let marks = 75;
-
-if (marks >= 60) {
-  console.log("Passed");
-} else {
-  console.log("Failed");
+for (let i = 1; i <= 5; i++) {
+  console.log("Count:", i);
 }
