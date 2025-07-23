@@ -1,3 +1,7 @@
-let name = "Abhishek";
-const age = 20;
-var city = "Bengaluru";
+let marks = 75;
+
+if (marks >= 60) {
+  console.log("Passed");
+} else {
+  console.log("Failed");
+}
