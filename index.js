@@ -1,7 +1,5 @@
-let student = {
-  name: "Abhishek",
-  age: 20,
-  course: "Web Development"
-};
-
-console.log(student.name);  // Abhishek
+let i=1;
+while(i<=3){
+    console.log("number:",i);
+    i++;
+}
