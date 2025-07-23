@@ -1,1 +1,3 @@
-console.log("Hello, JavaScript!");
+let name = "Abhishek";
+const age = 20;
+var city = "Bengaluru";
