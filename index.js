@@ -6,5 +6,5 @@ let rect3={
 function area(){
   return rect.width*rect.height
 }
-console.log(area(rect3));
+console.log(area(rect));
 
