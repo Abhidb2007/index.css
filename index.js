@@ -1,9 +1,4 @@
-function setTimeoutPromised(ms){
-  let p = new Promise(resolve=>setTimeout(resolve,ms));
-  return p;
-  
-}
 function callback(){
-  console.log("3 second have passed");
+  console.log("solve the problem");
 }
-setTimeoutPromised(3000).then(callback)
+setTimeout(callback,3000);

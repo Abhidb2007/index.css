@@ -1,6 +1,9 @@
-console.log("hi ");
-function timeout(){
-    console.log("click  button");
+function setTimeoutPromised(ms){
+  let p = new Promise(resolve=>setTimeout(resolve,ms));
+  return p;
+  
 }
-setTimeout(timeout,2000);
-console.log("welcome  loupe");
+function callback(){
+  console.log("3 second have passed");
+}
+setTimeoutPromised(3000).then(callback)
