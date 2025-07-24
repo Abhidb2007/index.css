@@ -4,7 +4,7 @@ console.log("hi ");
 console.log("click  button");
 setTimeout(timeout,10);
 console.log("welcome  loupe");
-// 3-4s
+// 8-10s
 let c=0;
 for(let i=0;i<1000000;i++){
     c=c+1;
