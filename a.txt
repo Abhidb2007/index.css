@@ -1,3 +1,6 @@
-const fs = require("fs");
-const data = fs.readFileSync("a.txt", "utf8");
-console.log(data);
+console.log("hi ");
+function timeout(){
+    console.log("click  button");
+}
+setTimeout(timeout,2000);
+console.log("welcome  loupe");

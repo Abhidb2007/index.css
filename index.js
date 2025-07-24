@@ -1,6 +1,6 @@
-console.log("hi ");
 function timeout(){
-    console.log("click  button");
+console.log("hi ");
 }
-setTimeout(timeout,1000);
+console.log("click  button");
+setTimeout(timeout,10);
 console.log("welcome  loupe");
