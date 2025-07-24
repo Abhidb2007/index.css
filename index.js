@@ -1,7 +1,10 @@
-console.log("Start");
+let rect3={
+  width: 45,
+  height:30
 
-setTimeout(() => {
-  console.log("hi BHI");
-}); // 8000 milliseconds = 19 seconds
+}
+function area(){
+  return rect.width*rect.height
+}
+console.log(area(rect3));
 
-console.log("End");
