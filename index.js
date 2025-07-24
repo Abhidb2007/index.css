@@ -3,4 +3,4 @@ function timeout(){
     console.log("click the button");
 }
 setTimeout(timeout,5000);
-console.log("welcome to loupe.");
+console.log("welcome to loupe");
