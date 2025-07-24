@@ -1,3 +1,4 @@
-const fs = require("fs");
-const data = fs.readFileSync("a.txt", "utf8");
-console.log(data);
+function sum(a,b){
+    return a+b;
+}
+console.log(sum(1,2));
