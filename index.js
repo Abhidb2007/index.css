@@ -1,4 +1,6 @@
-function sum(a,b){
-    return a+b;
+console.log("hi there");
+function timeout(){
+    console.log("click the button");
 }
-console.log(sum(1,2))
+setTimeout(timeout,5000);
+console.log("welcome to loupe.");
