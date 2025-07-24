@@ -1,4 +1,4 @@
-console.log("hi there");
+console.log("hi ");
 function timeout(){
     console.log("click  button");
 }
