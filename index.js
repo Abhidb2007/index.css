@@ -1,10 +1,9 @@
-let rect3={
-  width: 49,
-  height:31
-
+function setTimeoutPromised(ms){
+  let p = new Promise(resolve=>setTimeout(resolve,ms));
+  return p;
+  
 }
-function area(){
-  return rect.width*rect.height
+function callback(){
+  console.log("3 second have passed");
 }
-console.log(area(rect));
-
+setTimeoutPromised(3000).then(callback)
