@@ -1,7 +1,7 @@
 console.log("Start");
 
 setTimeout(() => {
-  console.log("This runs after 2 seconds");
-}, 2000); // 2000 milliseconds = 2 seconds
+  console.log("This runs after 19 seconds");
+}, 9000); // 9000 milliseconds = 19 seconds
 
 console.log("End");
