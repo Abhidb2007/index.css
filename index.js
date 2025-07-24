@@ -1,13 +1,7 @@
-function timeout(){
-console.log("hi ");
-}
-console.log("click  button");
-setTimeout(timeout,10);
-console.log("welcome  loupe");
-// 8-10s
-let c=0;
-for(let i=0;i<1000000;i++){
-    c=c+1;
+console.log("Start");
 
-}
-console.log("Expensive operation done");
+setTimeout(() => {
+  console.log("This runs after 2 seconds");
+}, 2000); // 2000 milliseconds = 2 seconds
+
+console.log("End");
