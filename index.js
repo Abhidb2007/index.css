@@ -1,6 +1,6 @@
 let rect3={
   width: 49,
-  height:3
+  height:30
 
 }
 function area(){
