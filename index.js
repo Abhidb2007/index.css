@@ -1,5 +1,5 @@
 let rect3={
-  width: 45,
+  width: 4,
   height:30
 
 }
