@@ -1,5 +1,5 @@
-function random(){
+function callback(){
+  console.log("promised is succeded")
 
 }
-let p = new Promise(random);
-console.log(p);
+p.then(callback);
