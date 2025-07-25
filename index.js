@@ -1,5 +1,9 @@
-function callback(){
-  console.log("promised is succeded")
+const fs = require("fs");
 
-}
-p.then(callback);
+fs.readFile("grocery.txt", "utf-8", function(err, data) {
+  if (err) {
+    console.log("File not found!");
+  } else {
+    console.log(data); // Output: Milk\nEggs\nBread
+  }
+});
