@@ -1,4 +1,4 @@
 function callback(){
   console.log("solve the problem");
 }
-setTimeout(callback,6000);
+setTimeout(callback,7000);
