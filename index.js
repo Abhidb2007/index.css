@@ -1,4 +1,5 @@
-function callback(){
-  console.log("solve the problem");
+function random(){
+
 }
-setTimeout(callback,10000);
+let p= new prommise(random);
+console.log(p);
