@@ -1,5 +1,5 @@
 function random(){
 
 }
-let p= new prommise(random);
+let p = new Promise(random);
 console.log(p);
