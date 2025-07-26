@@ -1,1 +1,3 @@
-setTimeoutPromisified(3000).then(callback)
+function doAsyncOp(resolve){
+    setTimeout(resolve,(3000));
+}
