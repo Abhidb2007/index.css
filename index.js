@@ -1,8 +1,6 @@
-function doAsyncOp(resolve){
-    setTimeout(resolve,(3000));
-}
-const p = new Promise(doAsyncOp);
-function callback(){
+
+const p = new Promise(async);
+function async(){
     console.log("3 seconds have passed")
 }
 p.then(callback)
