@@ -1,11 +1,9 @@
-const express = require('express');
-const app = express();
-const PORT = 9000;
+function setTimeoutPromisified(ms){
+    return new Promise(resolve(setTimeout,300));
 
-app.get('/', (req, res) => {
-    res.send('Hello from Express!');
-});
+}
+async function solve(){
+    await setTimeoutPromisified(2000);
 
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
+}
+
