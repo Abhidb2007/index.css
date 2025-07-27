@@ -3,7 +3,7 @@ function setTimeoutPromisified(ms){
 
 }
 async function solve(){
-    await setTimeoutPromisified(2000);
+    await setTimeoutPromisified(9000);
 
 }
 
