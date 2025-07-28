@@ -1,9 +1,9 @@
 function setTimeoutPromisified(ms){
-    return new Promise(resolve(setTimeout,300));
+    return new Promise(resolve(setTimeout,3000));
 
 }
 async function solve(){
-    await setTimeoutPromisified(9000);
+    await setTimeoutPromisified(6000);
 
 }
 
