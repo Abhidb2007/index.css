@@ -8,4 +8,5 @@ async function solve(){
     await setTimeoutPromisified(2000);{
     console.log("hello");
 }
+solve();
         
