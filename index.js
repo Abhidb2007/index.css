@@ -5,6 +5,6 @@ function setTimeoutPromisified(ms) {
 }
 
 // Using it
-setTimeoutPromisified(3000).then(() => {
+setTimeoutPromisified(3000)
   console.log("3 seconds passed");
-});
+
