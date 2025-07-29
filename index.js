@@ -1,9 +1,4 @@
-function setTimeoutPromisified(ms){
-    return new Promise(resolve(setTimeout,3000));
-
+function callback(){
+    console.log("Callback function executed");
 }
-async function solve(){
-    await setTimeoutPromisified(6000);
-
-}
-
+p.then(callback)
