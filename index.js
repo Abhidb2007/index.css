@@ -1,17 +1,10 @@
-function setTimeoutPromisified(ms){
-    return new Promise(resolve =>setTimeout(resolve, ms));
-}
-async function solve(){
-    await setTimeoutPromisified(1000);
-    console.log("hi");
-}
-    await setTimeoutPromisified(9000);{
-    console.log("hello");
-}
-solve();
-function doAsyncOp{
-    resolve()
- 
+function setTimeoutPromisified(ms) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms);
+  });
 }
 
-        
+// Using it
+setTimeoutPromisified(3000).then(() => {
+  console.log("3 seconds passed");
+});
