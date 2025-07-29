@@ -9,4 +9,9 @@ async function solve(){
     console.log("hello");
 }
 solve();
+function doAsyncOp{
+    resolve()
+ 
+}
+
         

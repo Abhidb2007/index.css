@@ -1,11 +1,43 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>QR Code Generator Using HTML CSS And JavaScript</title>
-        <link rel="stylesheets" href="style.css">
-    </head>
-    <body>
-        
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="container">
+    <p>Enter text</p>
+    <input type="text" id="qr-input" placeholder="Type here..." />
+    <button onclick="generateQRCode()">Generate QR Code</button>
+    <div id="qr-box"></div>
+  </div>
+
+  <!-- Include QRCode.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+
+  <!-- Your JS Code -->
+  <script>
+    function generateQRCode() {
+      const qrText = document.getElementById("qr-input").value;
+      const qrBox = document.getElementById("qr-box");
+      qrBox.innerHTML = ""; // Clear old QR
+
+      if (qrText.trim() !== "") {
+        QRCode.toCanvas(document.createElement('canvas'), qrText, { width: 200 }, function (error, canvas) {
+          if (error) {
+            console.error(error);
+            return;
+          }
+          qrBox.appendChild(canvas);
+        });
+      } else {
+        qrBox.innerHTML = "<p>Please enter text</p>";
+      }
+    }
+  </script>
+
+</body>
 </html>
