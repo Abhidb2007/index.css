@@ -1,10 +1,12 @@
-function setTimeoutPromisified(ms){
-    return new Promise ((resolve)=>{ setTimeout(resolve,ms);
-
-})
+function isAnagram(String1, String2) {
+    const sortedString1 = String1.toLowerCase().split("").sort().join("");
+    const sortedString2 = String2.toLowerCase().split("").sort().join("");
+ 
 }
- setTimeoutPromisified(3000).then(()=>{
-    console.log("3 seconds passed");
-});
+if(sortedString1 === sortedString2){
+    return true;
+}else{
+    return false;
+}
 
 
