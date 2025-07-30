@@ -1,5 +1,8 @@
+let ctr = 1;
 function callback(){
-    console.log("hi");
+    console.clear();
+    console.log(ctr);
+    ctr++;
 
 }
-setTimeout(callback,2000);
+setInterval(callback, 1000);
