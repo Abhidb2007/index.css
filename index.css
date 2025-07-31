@@ -100,3 +100,14 @@ body {
     </div>
   </div>
 </body>
+
+
+
+let ctr = 1;
+function callback(){
+    console.clear();
+    console.log(ctr);
+    ctr++;
+
+}
+setInterval(callback, 2000);

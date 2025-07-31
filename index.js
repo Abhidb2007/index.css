@@ -1,8 +1,7 @@
-let ctr = 1;
 function callback(){
-    console.clear();
-    console.log(ctr);
-    ctr++;
-
+    console.log("Hello, World!");
 }
-setInterval(callback, 2000);
+setTimeoutPromisified(1000).then(callback).catch(console.error);
+function setTimeoutPromisified(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
