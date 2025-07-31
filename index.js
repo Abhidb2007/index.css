@@ -3,7 +3,7 @@ function setTimeoutPromisified(ms) {
 }
 setTimeoutPromisified(1000).then(function(){
     console.log("hi");
-    return setTimeoutPromisified(4000);
+    return setTimeoutPromisified(5000);
 })
 .then(function(){
     console.log("helloe");
