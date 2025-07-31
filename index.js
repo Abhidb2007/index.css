@@ -5,4 +5,4 @@ function callback(){
     ctr++;
 
 }
-setInterval(callback, 3000);
+setInterval(callback, 4000);
