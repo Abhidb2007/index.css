@@ -1,12 +1,7 @@
-function callback(){
-    console.log("Hi");
+function setTimeoutPromisified(ms) {
+    return new Promise(resolve =>setTimeout(resolve,ms));
 }
-setTimeout(function(){
-    console.log("hi")
-},1000);
-setTimeout(function(){
-    console.log("hi threw")
-},2000);
-setTimeout(function(){
-    console.log("hi edei")
-},3000);
+setTimeoutPromisified(1000).then(function){
+    console.log("hi");
+    return setTimeoutPromisified(1000);
+}
