@@ -1,3 +1,13 @@
-fs.readFile('a.txt', 'utf8', (err, data) => {
-  console.log(data);
-});
+const fs = require('fs');
+
+function readFileAsync() {
+    return new Promise((resolve, reject) => {
+        fs.readFile("abhi.text", "utf8", (err, data) => {
+            if (err) {
+                reject("file not found");
+            } else {
+                resolve(data);
+            }
+        });
+    });
+}
