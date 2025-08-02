@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <body>
     <h1>ToDo list</h1>
     <div id="todoParent"></div>
       <div id="todo-1" style="display: flex;">
@@ -16,4 +17,11 @@
     <input type="text"></input>
     <button>Add togo</button>"
   </head>
+  </body>
+  <script>
+    function deleteToDo(index){
+      const element = document.getElementById("todo-" + index);
+      document.getElementById("todoParent").removeChild(element);
+    }
+  </script>
 </html>
