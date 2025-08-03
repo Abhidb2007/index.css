@@ -2,12 +2,14 @@
 <p class="info">This is info.</p>
 <p class="info">More info.</p>
 <button onclick="change()">Change Text</button>
+
 <script>
 function change() {
-    document.getElementById("title").innerHTML = "Changed!";
-    var infoElements = document.getElementsByClassName("info");
-    for (var i = 0; i < infoElements.length; i++) {
-        infoElements[i].innerHTML = "Changed Info!";
-    }
+  const heading = document.getElementById("title");
+  const infoParagraphs = document.getElementsByClassName("info");
+
+  heading.innerText = "Title Changed!";
+  infoParagraphs[0].innerText = "Updated first info paragraph.";
 }
+
 </script>
