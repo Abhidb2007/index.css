@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My First Static Page</title>
+  <title>Dynamic HTML Example</title>
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <h5>This is a static HTML page.</h5>
-  <ul>
-    <li>Home</li> <li>About</li>
-    
-    </ul>
+  <h1>Welcome!</h1>
+  <p id="message">Click the button to change this text.</p>
+
+  <button onclick="changeText()">Click Me</button>
+
+  <script>
+    function changeText() {
+      document.getElementById("message").innerText = "You clicked the button!";
+    }
+  </script>
 </body>
 </html>
