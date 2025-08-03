@@ -1,19 +1,17 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>Delete Element Example</title>
-</head>
-<body>
+    <body>
+        <input type="text"></input>
+        <button onclick="addTodo()">Add todo!</button>
+    </body>    
+        <script>
+            function addTodo(){
+                const inputEl=document.querySelector("input");
+                const value=inputEl.value;
+                const newDivEl=document.createElement("div");
+                newDivEl.innerHTML=value;
+                document.querySelector("body").appendChild(newDivEl);
+            }
+        </script>
 
-  <h2 id="title">This is a heading</h2>
-  <button onclick="deleteElement()">Delete Heading</button>
-
-  <script>
-    function deleteElement() {
-      const element = document.getElementById("title");
-      element.remove();  
-    }
-  </script>
-
-</body>
+   
 </html>
