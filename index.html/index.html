@@ -1,15 +1,19 @@
-<h1 id="title">Hello</h1>
-<p class="info">This is info.</p>
-<p class="info">More info.</p>
-<button onclick="change()">Change Text</button>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delete Element Example</title>
+</head>
+<body>
 
-<script>
-function change() {
-  const heading = document.getElementById("title");
-  const infoParagraphs = document.getElementsByClassName("info");
+  <h2 id="title">This is a heading</h2>
+  <button onclick="deleteElement()">Delete Heading</button>
 
-  heading.innerText = "Title Changed!";
-  infoParagraphs[0].innerText = "Updated first info paragraph.";
-}
+  <script>
+    function deleteElement() {
+      const element = document.getElementById("title");
+      element.remove();  // 🔥 This deletes the element from the page
+    }
+  </script>
 
-</script>
+</body>
+</html>
