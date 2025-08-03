@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Dynamic HTML Example</title>
-</head>
-<body>
-  <h1>Welcome!</h1>
-  <p id="message">Click the button change the text.</p>
-
-  <button onclick="changeText()">Click Me</button>
-
-  <script>
-    function changeText() {
-      document.getElementById("message").innerText = "You j";
+<h1 id="title">Hello</h1>
+<p class="info">This is info.</p>
+<p class="info">More info.</p>
+<button onclick="change()">Change Text</button>
+<script>
+function change() {
+    document.getElementById("title").innerHTML = "Changed!";
+    var infoElements = document.getElementsByClassName("info");
+    for (var i = 0; i < infoElements.length; i++) {
+        infoElements[i].innerHTML = "Changed Info!";
     }
-  </script>
-</body>
-</html>
+}
+</script>
