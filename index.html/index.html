@@ -1,11 +1,18 @@
-<style>
-    .greeting {
-        color: blue;
-    }
-    background-color: red;
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <span class="greeting">
-        hi there
-        </span>
-    </body>
+  <div class="todo-container">
+    <h1>To-Do List</h1>
+    <input type="text" id="todo-input" placeholder="Add a new task">
+    <button onclick="addToDo()">Add</button>
+    <ul id="todo-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
