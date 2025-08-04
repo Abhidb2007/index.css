@@ -7,3 +7,22 @@ function callback() {
     }
 }
 setInterval(callback, 1000);
+
+<html>
+    <body>
+        <input type="text"></input>
+        <button onclick="addTodo()">Add todo!</button>
+    </body>    
+        <script>
+            function addTodo(){
+                const inputEl=document.querySelector("input");
+                const value=inputEl.value;
+                const newDivEl=document.createElement("div");
+                newDivEl.innerHTML="<div>"+value+"</div><button onclick='deleteToDo()'>delete</button>";
+                
+                document.querySelector("body").appendChild(newDivEl);
+            }
+        </script>
+
+   
+</html>
