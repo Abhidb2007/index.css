@@ -35,7 +35,7 @@ body {
 
 /* Input field */
 .container input {
-  width: 100%;
+  width: 101%;
   padding: 109px;
   border: 1px solid yellow;
   border-radius: 8px;
