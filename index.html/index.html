@@ -8,7 +8,7 @@
                 const inputEl=document.querySelector("input");
                 const value=inputEl.value;
                 const newDivEl=document.createElement("div");
-                newDivEl.innerHTML="<div>"+value+"</div><button>delete</button>";
+                newDivEl.innerHTML="<div>"+value+"</div><button onclick='deleteToDo()'>delete</button>";
                 
                 document.querySelector("body").appendChild(newDivEl);
             }
