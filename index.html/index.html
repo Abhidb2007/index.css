@@ -6,7 +6,7 @@
         <script>
             let ctr=1;
             function deleteToDo(index){
-                const element=document.getElementById(index);
+                const element=document.getElementById("todo-" + index);
                 element.parentNode.removeChild(element);
 
             }
