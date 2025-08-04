@@ -20,7 +20,7 @@
       if (todoText === '') return;
 
       const li = document.createElement('li');
-      li.innerHTML = `
+      li.innerHTML =    `
         ${todoText}
         <button onclick="deleteToDo(this)">Delete</button>
       `;
@@ -30,4 +30,9 @@
     }
 
     function deleteToDo(button) {
-      const li =
+      const li = button.parentElement;
+      li.remove();
+    }
+  </script>
+</body>
+</html>
