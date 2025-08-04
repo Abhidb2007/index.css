@@ -36,7 +36,7 @@ body {
 /* Input field */
 .container input {
   width: 100%;
-  padding: 10px;
+  padding: 101px;
   border: 1px solid yellow;
   border-radius: 8px;
   margin-bottom: 15px;
@@ -82,69 +82,3 @@ body {
 
 
 
-<head>
-  <meta charset="UTP-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Horizontal Alig</title>
-  <style>
-    .container{
-      width: 1000px;
-      background: red;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="content">
-      <h1>hellow</h1>
-    </div>
-  </div>
-</body>
-
-
-
-let ctr = 1;
-function callback(){
-    console.clear();
-    console.log(ctr);
-    ctr++;
-
-}
-setInterval(callback, 2000);
-
-
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Vs code</title>
-    <link rel="stylesheet" href="style.css" type="text">
-    <style>
-      #todo{
-        color: blue;
-      }
-      #todo{
-        color: blue;
-      }
-      .todo{
-        color: blue;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Todo List</h1>
-    <h4>1. Take class</h4>
-    <h4>2. Go out to eat</h4>
-    <div >
-      <input type="text"></input>
-      <button >Add ToDo</button>
-      
-    </div>
-    <script>
-      const inputEl=document.querySelector("input");
-      console.log(inputEl);
-    </script>  
-  </body>
-</html>
