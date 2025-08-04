@@ -1,38 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>To-Do List</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="todo-container">
-    <h1>To-Do List</h1>
-    <input type="text" id="todo-input" placeholder="Add a new task">
-    <button onclick="addToDo()">Add ToDo</button>
-    <ul id="todo-list"></ul>
-  </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>ADD ToDo</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
 
-  <script>
-    function addToDo() {
-      const input = document.getElementById('todo-input');
-      const todoText = input.value.trim();
-      if (todoText === '') return;
-
-      const li = document.createElement('li');
-      li.innerHTML =    `
-        ${todoText}
-        <button onclick="deleteToDo(this)">Delete</button>
-      `;
-
-      document.getElementById('todo-list').appendChild(li);
-      input.value = '';
-    }
-
-    function deleteToDo(button) {
-      const li = button.parentElement;
-      li.remove();
-    }
-  </script>
-</body>
+    </head>
+    <body>
+        abhi
+        <button style="margin:10px; padding:10px;"> cdfgdg</button>;
+    </body>
 </html>
