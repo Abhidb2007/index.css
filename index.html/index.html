@@ -13,6 +13,21 @@
     <ul id="todo-list"></ul>
   </div>
 
-  <script src="script.js"></script>
-</body>
-</html>
+  <script>
+    function addToDo() {
+      const input = document.getElementById('todo-input');
+      const todoText = input.value.trim();
+      if (todoText === '') return;
+
+      const li = document.createElement('li');
+      li.innerHTML = `
+        ${todoText}
+        <button onclick="deleteToDo(this)">Delete</button>
+      `;
+
+      document.getElementById('todo-list').appendChild(li);
+      input.value = '';
+    }
+
+    function deleteToDo(button) {
+      const li =
