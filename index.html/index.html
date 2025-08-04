@@ -8,14 +8,14 @@
 <body>
   <div class="todo-container">
     <h1>To-Do List</h1>
-    <input type="text" id="todo-list" placeholder="Add a new task">
+    <input type="text" id="todo-input" placeholder="Add a new task">
     <button onclick="addToDo()">Add ToDo</button>
     <ul id="todo-list"></ul>
   </div>
 
   <script>
     function addToDo() {
-      const input = document.getElementById('todo-list');
+      const input = document.getElementById('todo-input');
       const todoText = input.value.trim();
       if (todoText === '') return;
 
