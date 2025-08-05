@@ -1,28 +1,23 @@
-let ctr = 0;
-function callback() {
-    const el = document.querySelectorAll("h2")[1];
-    if (el) {
-        el.innerHTML = ctr;
-        ctr = ctr + 1;
-    }
-}
-setInterval(callback, 1000);
-
+<!DOCTYPE html>
 <html>
-    <body>
+    <head>
         <input type="text"></input>
-        <button onclick="addTodo()">Add todo!</button>
-    </body>    
+        <button onclick="addTodo()">add todo</button>
+        <div id="todos"></div>
+    
         <script>
-            function addTodo(){
-                const inputEl=document.querySelector("input");
-                const value=inputEl.value;
-                const newDivEl=document.createElement("div");
-                newDivEl.innerHTML="<div>"+value+"</div><button onclick='deleteToDo()'>delete</button>";
-                
-                document.querySelector("body").appendChild(newDivEl);
-            }
-        </script>
+            
+        
+            let todos = [];
+            setInterval(function(){
+                todos.push({
+                    title:Math.random()
+                })
+                render();
+            }, 1000);
+            function render() {12 hidden lines}
 
-   
-</html>
+            
+       </script>
+    </head>
+</html>                
