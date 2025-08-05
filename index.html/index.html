@@ -1,49 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Todo List</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        #todos { margin-top: 20px; }
-        li { margin-bottom: 5px; }
-    </style>
+  <meta charset="UTF-8">
+  <title>Simple Calendar</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="text" id="todo-input" placeholder="Add todo">
-    <button onclick="addTodo()">Add Todo</button>
-    <div id="todos"></div>
+  <div class="calendar">
+    <div class="header">
+      <button id="prev">&lt;</button>
+      <div id="month-year"></div>
+      <button id="next">&gt;</button>
+    </div>
+    <div class="weekdays">
+      <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+    </div>
+    <div class="days" id="calendar-days"></div>
+  </div>
 
-    <script>
-        let todos = [];
-
-        function addTodo() {
-            const input = document.getElementById('todo-input');
-            const value = input.value.trim();
-            if (value) {
-                todos.push({ title: value });
-                input.value = '';
-                render();
-            }
-        }
-
-        setInterval(function() {
-            todos.push({
-                title: Math.random().toString()
-            });
-            render();
-        }, 1000);
-
-        function render() {
-            const todosDiv = document.getElementById('todos');
-            todosDiv.innerHTML = '';
-            const ul = document.createElement('ul');
-            todos.forEach(todo => {
-                const li = document.createElement('li');
-                li.textContent = todo.title;
-                ul.appendChild(li);
-            });
-            todosDiv.appendChild(ul);
-        }
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>
