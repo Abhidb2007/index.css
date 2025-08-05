@@ -1,13 +1,9 @@
-<body>
-    <input type="text"></input>
-    <button onclick="addTo()">A</button>
-    <script>
-        function addToDo(){
-            const value=document.querySelector("input").value;
-            const newTodoDivEl=document.createElement("div");
-            newTodoDivEl.innerHTML="<div>"+value+"</div><button>Delete</button>";
-            document.querySelector("body").appendChild(newTodoDivEl);
-        }
-        
-    </script>
-</body>
+const todo=[{
+    id: 1,
+    title: "go to gym"
+},{
+    id: 2,
+    title: "ads"
+
+
+}]
