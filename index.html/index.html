@@ -15,8 +15,12 @@
                 const div = document.querySelector("div");
                 const h1 = document.querySelector("h1");
                 const button = document.querySelector("button");
+                button.innerHTML = "Delete"
                 h1.innerHTML = "Todos";
-                
+                div.append(h1)
+                div.append(button)
+                document.querySelector("body").append(div);
+
 
             }
         </script>
