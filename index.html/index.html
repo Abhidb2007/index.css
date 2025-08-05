@@ -1,9 +1,23 @@
-const todo=[{
-    id: 1,
-    title: "go to gym"
-},{
-    id: 2,
-    title: "ads"
+<!DOCTYPE html>
+<html>
+    <head>
+        <input type="text"></input>
+        <button onclick="addTodo()">add todo</button>
+        <script>
+            let todos = [];
+            function addTodo(){
+                todos.push({
+                    title: document.querySelector("input").value
+                })
+                render()
+            }
+            function render(){
+                
+            }
+        </script>
+        <body>
 
-
-}]
+        </body>
+    </head>
+        
+</html>
