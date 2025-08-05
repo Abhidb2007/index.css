@@ -3,40 +3,21 @@
     <head>
         <input type="text"></input>
         <button onclick="addTodo()">add todo</button>
+        <div id="todos"></div>
+    
         <script>
-            let todos = [];
-            function addTodo(){
-                todos.push({
-                    title: document.querySelector("input").value
-                })
-                render()
-            }
-            function render(){
-                for(let i = 0; i < todos.length; i++){
-                    const todo = todos[i];
-                    const div = document.createElement("div");
-                    const h1 = document.createElement("h1");
-                    const button = document.createElement("button");
-                    button.innerHTML = "Delete"
-                    h1.innerHTML = todo.title;
-                    div.append(h1)
-                    div.append(button)
-                    document.querySelector("body").append(div);
-                }
-                const div = document.querySelector("div");
-                const h1 = document.querySelector("h1");
-                const button = document.querySelector("button");
-                button.innerHTML = "Delete"
-                h1.innerHTML = "Todos";
-                
-                document.querySelector("body").append(div);
-
-
-            }
-        </script>
-        <body>
-
-        </body>
-    </head>
+            
         
-</html>
+            let todos = [];
+            setInterval(function(){
+                todos.push({
+                    title:Math.random()
+                })
+                render();
+            }, 1000);
+            function render() {12 hidden lines}
+
+            
+       </script>
+    </head>
+</html>                
