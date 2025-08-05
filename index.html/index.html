@@ -4,13 +4,7 @@
         <input type="text"></input>
         <button onclick="addTodo()">add todo</button>
         <script>
-            let todos = [];
-            function addTodo(){
-                todos.push({
-                    title: document.querySelector("input").value
-                })
-                render()
-            }
+            
             function render(){
                 for(let i = 0; i < todos.length; i++){
                     const todo = todos[i];
