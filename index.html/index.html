@@ -26,13 +26,4 @@
       render()
 
     }
-    function render(){
-      let todosDiv = document.querySelector("#todos");
-      todosDiv.innerHTML = "";
-      for(let i=0; i<todos.length; i++){
-        let todo = todos[i];
-        let todoDiv = document.createElement("div");
-        todoDiv.innerText = todo.title;
-        todosDiv.appendChild(todoDiv);
-      }
-    }
+    
