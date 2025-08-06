@@ -22,3 +22,7 @@ function addTodo() {
     document.querySelector("#todoInput").value = "";
   }
 }
+function deleteFirsttodo() {
+  todos.splice(0, 1);
+  render();
+}
