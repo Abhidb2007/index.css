@@ -13,3 +13,12 @@ function createToDoComponent(todo) {
   li.className = todo.completed ? "completed" : "";
   return li;
 }
+function addTodo() {
+  const todoTitle = document.querySelector("#todoInput").value;
+  if (todoTitle) {
+    const newTodo = { id: todos.length + 1, title: todoTitle, completed: false };
+    todos.push(newTodo);
+    render();
+    document.querySelector("#todoInput").value = "";
+  }
+}
