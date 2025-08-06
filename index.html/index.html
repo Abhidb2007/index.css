@@ -26,4 +26,12 @@
       render()
 
     }
+
+    function render(){
+      document.querySelector("#todos").innerHTML="";
+      for(let i=0;i<todos.lenght;i++){
+        const element = createToDoComponent(todos[i]);
+        document.querSelector("#todos").appendChild(element);
+      }
+    }
     
