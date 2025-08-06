@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <head>
   <input type="text"></input>
-  <button onclick="addtodo()">add todo!</button>
-  <button onclick="deleteLasttodo()">add todo!</button>
-  <button onclick="deleteFirsttodo()">add todo!</button>
-  <div id ="todo list"></div>
+  <button onclick="addTodo()">add todo!</button>
+  <button onclick="deleteLastTodo()"> Delete last todo!</button>
+  <button onclick="deleteFirstTodo()">Delete first todo!</button>
+  <div id ="todo"></div>
   <script>
     let todolist=[];
     function addtodo(){
@@ -12,6 +12,16 @@
         title: "go to the store",
       })
       render();
+    }
+    function deleteLasttodo(){
+      todos.splice(todos.length -1,1);
+      render();
+
+    }
+    function deleteFirsttodo(){
+      todos.splice(todos.lenght 0,1);
+      render();
+
     }
 
   </script>
