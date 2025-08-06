@@ -23,6 +23,6 @@ function addTodo() {
   }
 }
 function deleteFirsttodo() {
-  todos.splice(0, 2);
+  todos.splice(0, 3);
   render();
 }
