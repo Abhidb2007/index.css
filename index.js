@@ -1,15 +1,5 @@
-import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
-
-function Counter() {
-  const [count, setCount] = useState(0); // State to track count
-
-  return (
-    <div>
-      <h1>Count: {count}</h1>  
-      <button onClick={() => setCount(count + 1)}>Increase</button>
-    </div>
-  );
+function Welcome() {
+  return <h1>Hello, React!</h1>;
 }
 
-ReactDOM.render(<Counter />, document.getElementById('root'));
+ReactDOM.render(<Welcome />, document.getElementById('root'));
