@@ -1,27 +1,38 @@
 <!DOCTYPE html>
-<head>
+<html>
+  <head>
+    <body>
+      <title>Todo List</title>
   <input type="text"></input>
   <button onclick="addTodo()">add todo!</button>
-  <button onclick="deleteLastTodo()"> Delete last todo!</button>
-  <button onclick="deleteFirstTodo()">Delete first todo!</button>
-  <div id ="todo"></div>
+  <button onclick="deleteLastTodo()"> Delete last todo</button>
+  <button onclick="deleteFirstTodo()">Delete first todo</button>
+  <div id ="todos"></div>
   <script>
-    let todolist=[];
+    let todos=[];
     function addtodo(){
       todos.push({
-        title: "go to the store",
+        title: document.querySelector("input").value,
       })
-      render();
+      render()
     }
     function deleteLasttodo(){
       todos.splice(todos.length -1,1);
-      render();
+      render()
 
     }
     function deleteFirsttodo(){
       todos.splice(todos.lenght 0,1);
-      render();
+      render()
 
     }
-
-  </script>
+    function render(){
+      let todosDiv = document.querySelector("#todos");
+      todosDiv.innerHTML = "";
+      for(let i=0; i<todos.length; i++){
+        let todo = todos[i];
+        let todoDiv = document.createElement("div");
+        todoDiv.innerText = todo.title;
+        todosDiv.appendChild(todoDiv);
+      }
+    }
