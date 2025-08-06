@@ -1,23 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Simple Calendar</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="calendar">
-    <div class="header">
-      <button id="prev">&lt;</button>
-      <div id="month-year"></div>
-      <button id="next">&gt;</button>
-    </div>
-    <div class="weekdays">
-      <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-    </div>
-    <div class="days" id="calendar-days"></div>
-  </div>
+  <input type="text"></input>
+  <button onclick="addtodo()">add todo!</button>
+  <button onclick="deleteLasttodo()">add todo!</button>
+  <button onclick="deleteFirsttodo()">add todo!</button>
+  <div id ="todo list"></div>
+  <script>
+    let todolist=[];
+    function addtodo(){
+      todos.push({
+        title: "go to the store",
+      })
+      render();
+    }
 
-  <script src="script.js"></script>
-</body>
-</html>
+  </script>
