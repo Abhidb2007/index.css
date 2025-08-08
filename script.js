@@ -15,7 +15,7 @@
                 })
                 render();
             }, 1000);
-            function render() {12 hidden lines}
+            function render() {12 hidden lines};
 
             
        </script>
