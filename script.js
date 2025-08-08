@@ -8,7 +8,7 @@
         <script>
             
         
-            let todos = []
+            let todos = [];
             setInterval(function(){
                 todos.push({
                     title:Math.random()
