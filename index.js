@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
     res.send('Hello from Node.js + Express!');
 });
 
-// Example API route
+
 app.get('/api', (req, res) => {
     res.json({ message: 'This is an API endpoint', status: 'success' });
 });
