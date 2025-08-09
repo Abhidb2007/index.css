@@ -16,7 +16,7 @@ app.get('/api', (req, res) => {
     res.json({ message: 'This is an API endpoint', status: 'success' });
 });
 
-// Start server
+
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);
 });
