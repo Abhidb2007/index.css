@@ -1,14 +1,22 @@
-// Import the HTTP module
-const http = require('http');
+// Import Express
+const express = require('express');
+const app = express();
+const PORT = 3000;
 
-// Create a server
-const server = http.createServer((req, res) => {
-    res.statusCode = 200; // OK status
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello World from Node.js!\n');
+// Middleware to parse JSON data
+app.use(express.json());
+
+// Home route
+app.get('/', (req, res) => {
+    res.send('Hello from Node.js + Express!');
 });
 
-// Start the server on port 3000
-server.listen(3000, () => {
-    console.log('Server running at http://localhost:3000/');
+// Example API route
+app.get('/api', (req, res) => {
+    res.json({ message: 'This is an API endpoint', status: 'success' });
+});
+
+// Start server
+app.listen(PORT, () => {
+    console.log(`Server is running at http://localhost:${PORT}`);
 });
