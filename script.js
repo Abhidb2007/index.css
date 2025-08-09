@@ -13,7 +13,7 @@
                 todos.push({
                     title:Math.random()
                 })
-                render();
+                render()
             }, 1000);
             function render() {12 hidden lines};
 
