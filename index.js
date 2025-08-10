@@ -1,21 +1,29 @@
+// Step 1: Install dependencies
+// npm init -y
+// npm install express
 
 const express = require('express');
 const app = express();
-const PORT = 3000;
 
-app.use(express.json());
+app.use(express.json()); // Middleware for JSON body parsing
 
-
+// Step 2: Define a route
 app.get('/', (req, res) => {
-    res.send('Hello from Node.js + Express!');
+  res.send('Backend is working!');
 });
 
-
-app.get('/api', (req, res) => {
-    res.json({ message: 'This is an API endpoint', status: 'success' });
+// Step 3: Example POST request
+app.post('/login', (req, res) => {
+  const { username, password } = req.body;
+  // Normally: Check these in a database
+  if (username === 'admin' && password === '1234') {
+    res.send({ message: 'Login successful' });
+  } else {
+    res.status(401).send({ message: 'Invalid credentials' });
+  }
 });
 
-
-app.listen(PORT, () => {
-    console.log(`Server is running at http://localhost:${PORT}`);
+// Step 4: Start server
+app.listen(3000, () => {
+  console.log('Server running on http://localhost:3000');
 });
