@@ -7,7 +7,7 @@ const app = express();
 
 app.use(express.json()); // Middleware for JSON body parsing
 
-// Step 2: Define a route
+
 app.get('/', (req, res) => {
   res.send('Backend is working!');
 });
