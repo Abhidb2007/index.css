@@ -5,7 +5,7 @@
 const express = require('express');
 const app = express();
 
-app.use(express.json()); // Middleware for JSON body parsing
+app.use(express.json());
 
 
 app.get('/', (req, res) => {
