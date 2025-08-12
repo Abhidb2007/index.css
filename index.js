@@ -1,17 +1,15 @@
 const fs = require("fs");
-function main(fileName){
-  fs.readFile(fileName,"utf-8", function(err, data){
-    let total=0;
+
+function main(fileName) {
+  fs.readFile(fileName, "utf-8", function (err, data) {
     if (err) {
-      console.error("Error reading file:", err.message);
+      console.error("Error reading file:", err);
       return;
     }
-    for (let i = 0; i < data.length; i++){
-      if(data[i]===" "){
-        total++;
-      }
-    }
-    console.log(total + 1);
-  })
+    // Split the text by whitespace and filter out empty strings
+    const words = data.trim().split(/\s+/).filter(Boolean);
+    console.log(words.length);
+  });
 }
+
 main("a.text");
