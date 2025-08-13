@@ -1,45 +1,65 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=divice-width,initial-scale=1.0">
-    <title>profile card</title>
-    <style>
-      body {
-        font-family: 'Franklin Gothic Medium';
-        background-color: blueviolet;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Card</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex; /* Centering */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+  }
 
-      }
-      .card{
-        background-color: white;
-        height: 400px;
-        width:200px;
-        border-radius: 20px;
-        box-shadow: 0px 2px 10px rgba(0,0,0,0,2);
-        display: flex;
-        padding: 29px;
-      }
-      .card:hover{
-        transform: scale(1.05);
-        transition: 0.3s;
+  .card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+  }
 
-      }
-      .card img{
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin: 0 auto;
-        
-      }
+  .card:hover {
+    transform: scale(1.05);
+  }
 
+  .card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
 
+  .social-links a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
 
-    </style>
-  </head>
+  .social-links a:hover {
+    color: #007BFF;
+  }
+  
+</style>
+</head>
+<body>
 
+<div class="card">
+  <img src="https://via.placeholder.com/100" alt="Profile Picture">
+  <h2>John Doe</h2>
+  <p>Web Developer passionate about creating interactive websites.</p>
+  <div class="social-links">
+    <a href="#">FB</a>
+    <a href="#">TW</a>
+    <a href="#">IG</a>
+  </div>
+</div>
+
+</body>
 </html>
