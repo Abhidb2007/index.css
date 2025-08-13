@@ -5,10 +5,13 @@
       function onButtonPress(){
         const currentValue=document.getElementById("btn").innerHTML;
         console.log(currentValue.split(""));
-        const newValue=currentValue.split("").reverse().join("");
-        document.getElementById("btn").innerHTML=newValue;
+        const currentCounter=currentValue.split("")[1];
+        const newCounter=parseInt(currentCounter)+1;
+        document.getElementById("btn").innerHTML="counter"+newCounter;
       }  
 
     </script>
   </head>
+  <body>
+    <button onclick="buttonpress()" id="btn">Counter 0</button>
 </html>
