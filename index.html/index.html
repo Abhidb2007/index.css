@@ -1,22 +1,22 @@
-// Inside App.js (React)
-import React, { useEffect, useState } from 'react';
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=divice-width,initial-scale=1.0">
+    <title>profile card</title>
+    <style>
+      body {
+        font-family: 'Franklin Gothic Medium';
+        background-color: blueviolet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        
+      }
 
-function App() {
-  const [message, setMessage] = useState('');
+    </style>
+  </head>
 
-  useEffect(() => {
-    fetch('http://localhost:5000/api/message')
-      .then(res => res.json())
-      .then(data => setMessage(data.message))
-      .catch(err => console.log("Error:", err));
-  }, []);
-
-  return (
-    <div>
-      <h1>Message from backend:</h1>
-      <p>{message}</p>
-    </div>
-  );
-}
-
-export default App;
+</html>
