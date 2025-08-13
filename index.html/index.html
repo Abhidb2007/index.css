@@ -6,7 +6,7 @@
       function onButtonPress() {
         const currentValue = document.getElementById("btn").innerHTML;
         // Extract number using regex
-        const currentCounter = parseInt(currentValue.replace("Counter ", ""));
+        const currentCounter = parseInt(currentValue.replace("Counter ", "")); 
         const newCounter = currentCounter + 1;
         document.getElementById("btn").innerHTML = "Counter " + newCounter;
       }
