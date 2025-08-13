@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Counter Example</title>
-    <script>
-      function onButtonPress() {
-        const currentValue = document.getElementById("btn").innerHTML;
-        // Extract number using regex
-        const currentCounter = parseInt(currentValue.replace("Counter ", "")); 
-        const newCounter = currentCounter + 1;
-        document.getElementById("btn").innerHTML = "Counter " + newCounter;
-      }
-    </script>
-  </head>
+<html lang="en">
+<head>
+  <title>botton parent</title>
   <body>
-    <button onclick="onButtonPress()" id="btn">Counter 0</button>
+    <script>
+      let state={
+        count: 0,
+        color : "red",
+
+      }
+      function onButtonClick(){
+        sate.count++;
+        buttonComponentReRender();
+      }
+      
+      
+    </script>
   </body>
+  
+</head>
 </html>
