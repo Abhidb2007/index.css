@@ -1,63 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Profile Card</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex; /* Centering */
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full height */
-  }
+<!DOCTYPE >
+<html>
+  <head>
+    <script>
+      function onButtonPress(){
+        const currentValue=document.getElementById("btn").innerHTML;
+        console.log(currentValue.split(""));
+        const newValue=currentValue.split("").reverse().join("");
+        document.getElementById("btn").innerHTML=newValue;
+      }  
 
-  .card {
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-    padding: 20px;
-    text-align: center;
-    width: 250px;
-    transition: transform 0.3s ease;
-  }
-
-  
-
-  .card img {
-    width: 100px;
-    height: 100px;
-    border-radius: 10%;
-    object-fit: none;
-  }
-
-  .social-links a {
-    margin: 0 10px;
-    text-decoration: bold;
-    color: #551a61;
-    font-weight: bold;
-  }
-
-  .social-links a:hover {
-    color: #ff0000;
-  }
-  
-</style>
-</head>
-<body>
-
-<div class="card">
-  <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW__LeJsnrSCy0twaCt-Mb8ew21k1ob41nZg&s alt="Profile Picture">
-  <h2>John Doe</h2>
-  <p>Web Developer passionate about creating interactive websites.</p>
-  <div class="social-links">
-    <a href=>FB</a>
-    <a href=>TW</a>
-    <a href=>IG</a>
-  </div>
-</div>
-
-</body>
+    </script>
+  </head>
 </html>
