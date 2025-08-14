@@ -11,7 +11,7 @@ export default function App() {
   }
   return (
     <div>
-      <h2>Running on: localhost</h2>
+      <h2>Running on:  localhost</h2>
       <Button onClickHandler={onClickHandler} count={count} />
     </div>
   );
