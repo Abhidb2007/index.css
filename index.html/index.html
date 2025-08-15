@@ -8,4 +8,17 @@
     <button id="stopTimer()">stopTimer</button>
     <button id="resetTimer()">resetTimer</button>
   </body>
+  <script>
+    let seconds=1;
+    let timer;
+    function startTimer(){
+      if(!timer){
+        time=setInterval((){
+          seconds++;
+          document.getElementById("text").innerText=seconds;
+        },1000);
+      }
+    }
+  </script>
+
 </html>
