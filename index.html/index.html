@@ -1,37 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <tittle>simple timer</tittle>
+    <title>DOM Manipulation Example</title>
   </head>
   <body>
-    <h1 id="time">1</h1>
-    <button onClick="startTimer()">start</button>
-    <button onClick="stopTimer()">stop</button>
-    <button onClick="resetTimer()">reset</button>
-  </body>
-  <script>
-    let seconds=1;
-    let timer;
-    function startTimer(){
-      if(!timer){
-        timer=setInterval(() =>{
-          seconds++;
-          document.getElementById("time").innerText=seconds;
-        },1000);
+    <h1 id="title">Count: 0</h1>
+    <button onclick="increase()">Increase</button>
+    <button onclick="decrease()">Decrease</button>
+
+    <script>
+      let count = 0;
+
+      function increase() {
+        count++;
+        document.getElementById("title").innerText = "Count: " + count;
       }
-    }
-    function stopTimer(){
-      clearInterval(timer);
-      timer=1;
-      document.getElementById("time").innerText=seconds;
 
-    }
-    function resetTimer(){
-      stopTimer();
-      seconds=1;
-      document.getElementById("time").innerText=seconds;
-
-    }
-  </script>
-
+      function decrease() {
+        count--;
+        document.getElementById("title").innerText = "Count: " + count;
+      }
+    </script>
+  </body>
 </html>
