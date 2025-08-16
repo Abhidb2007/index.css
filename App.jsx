@@ -8,6 +8,16 @@ function App(){
 function Counter(){ 
   const[count, setCount]=useState(0);
 console.log("counter");
+useEffect(function(){
+  setInterval(function(){
+    //setcount(count+1);
+  setCount(function(count) {
+    return count+1;
+
+  })  
+  },1000)
+  console.log("mounted");
+},[])
 
   return <div>
     <h1 id="text">{count}
