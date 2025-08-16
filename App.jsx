@@ -27,3 +27,8 @@ useEffect(function(){
 
 }
 export default App
+
+
+useEffect(()=>{
+  console.log("count change:",count);
+},[count]);
