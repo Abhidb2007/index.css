@@ -12,7 +12,7 @@ useEffect(function(){
   setInterval(function(){
     //setcount(count+1);
   setCount(function(count) {
-    return count+1;
+    return count+2;
 
   })  
   },1000)
