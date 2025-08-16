@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <tittle>stop timer</tittle>
+    <tittle>simple timer</tittle>
   </head>
   <body>
-    <button id="startTimer()">startTimer</button>
-    <button id="stopTimer()">stopTimer</button>
-    <button id="resetTimer()">resetTimer</button>
+    <h1 id="time">1</h1>
+    <button onClick="startTimer()">start</button>
+    <button onClick="stopTimer()">stop</button>
+    <button onClick="resetTimer()">reset</button>
   </body>
   <script>
     let seconds=1;
     let timer;
     function startTimer(){
       if(!timer){
-        time=setInterval((){
+        timer=setInterval(() =>{
           seconds++;
-          document.getElementById("text").innerText=seconds;
+          document.getElementById("time").innerText=seconds;
         },1000);
       }
     }
     function stopTimer(){
-      setInterval(timer);
-      timer=null;
+      clearInterval(timer);
+      timer=1;
+      document.getElementById("time").innerText=seconds;
 
     }
     function resetTimer(){
-      setInterval();
+      stopTimer();
       seconds=1;
-      
+      document.getElementById("time").innerText=seconds;
 
     }
   </script>
