@@ -1,6 +1,6 @@
 import React,{component} from 'react';
 class classCounter extends component{
-    state={count:3};
+    state={count:4};
     increament(){
         this.setState({count:this.state.count+1});
     };
